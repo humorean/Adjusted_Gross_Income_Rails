@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Deductions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deductions.each do |deduction| %>
+      <tr>
+        <td><%= link_to 'Show', deduction %></td>
+        <td><%= link_to 'Edit', edit_deduction_path(deduction) %></td>
+        <td><%= link_to 'Destroy', deduction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deduction', new_deduction_path %>
