@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem "puma"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
