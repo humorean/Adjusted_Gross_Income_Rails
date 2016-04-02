@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'session/new'
+
   resources :users
   resources :deductions
   resources :incomes
+  resources :session
   get 'main/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
